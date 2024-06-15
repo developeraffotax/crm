@@ -1,0 +1,40 @@
+.button-container {
+  margin-left: 10px;
+}
+
+.start-button,
+.stop-button {
+  background-color: #eae6e6;
+  border: none;
+  border-radius: 20px;
+  color: #333;
+  cursor: pointer;
+  font-size: 1em;
+  height: 30px;
+  padding: 0 20px;
+  transition: background-color 0.2s;
+}
+
+.start-button.on {
+  background-color: #43aa5d;
+  color: #fff;
+}
+
+.stop-button.on {
+  background-color: #f44336;
+  color: white;
+}
+.stop-button.on:hover {
+  background-color: #f3847c;
+  color: black;
+}
+
+.start-button.off:hover {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.stop-button.off:hover {
+  background-color: #f44336;
+  color: #fff;
+}
