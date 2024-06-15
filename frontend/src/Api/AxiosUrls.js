@@ -1,6 +1,6 @@
 //BaseUrl
-// export const BaseUrl = "http://localhost:7878/api/";
-export const BaseUrl = "https://backaffotax.robbito.com/api/";
+export const BaseUrl = "http://localhost:7878/api/";
+// export const BaseUrl = "https://backaffotax.robbito.com/api/";
 
 //Auth / Users
 export const Login = "login";

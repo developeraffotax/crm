@@ -36,10 +36,10 @@ if (cluster.isPrimary) {
   app.use(morgan("tiny"));
   app.use("/api", require("./server/routes/routes"));
 
-  // app.use(express.static("../frontend/build"));
-  // app.get("*", (req, res) => {
-  //   res.sendFile(path.resolve(__dirname, "../frontend", "build", "index.html"));
-  // });
+  app.use(express.static("../frontend/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "../frontend", "build", "index.html"));
+  });
 
   app.use("/", (req, res) => {
     res.send("Server is running...");
